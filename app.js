@@ -12,6 +12,7 @@ function calendar() {
     //define days
     const currentDate = new Date();
     const days = currentDate.getDate();
+    days = days < 10 ? "0" + days : days;
     daysEl.innerHTML = days;
 
     //define days name 
